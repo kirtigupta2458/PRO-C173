@@ -303,28 +303,15 @@ AFRAME.registerComponent("markerhandler", {
       saveRatingButton.addEventListener("click", () => {
         document.getElementById("rating-modal-div").style.display = "none";
         //Get the input value(Review & Rating)
-        var rating = document.getElementById("rating-input").value;
-        var feedback = document.getElementById("feedback-input").value;
+    
 
         //Update db
-        firebase
-          .firestore()
-          .collection("dishes")
-          .doc(dish.id)
-          .update({
-            last_review: feedback,
-            last_rating: rating
-          })
-          .then(() => {
-            swal({
-              icon: "success",
-              title: "Thanks For Rating!",
-              text: "We Hope You Like Dish !!",
-              timer: 2500,
-              buttons: false
-            });
-          });
-      });
+        
+        
+        
+        
+        
+        
     } else{
       swal({
         icon: "warning",
